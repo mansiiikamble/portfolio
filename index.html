@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mansi Kamble - Portfolio,portfolio website crafted using HTML, CSS, and JavaScript, showcases an impressive user interface with additional features to enhance the browsing experience">
+    <title>Mansi Kamble - Portfolio</title>
+    <meta name="title" content="Mansi Kamble - Portfolio">
+    <meta name="keywords" content="mansi kamble,mansi kamble portfolio,front end developer,web developer,portfolio">
+    <meta name="theme-color" content="#081c29">
+    <link rel="canonical" href="https://github.com/mansiiikamble/portfolio.git">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/responsiveness.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <link rel="preload" href="images/profile.jpg" as="image">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsiveness.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/mansiiikamble/portfolio.git">
+    <meta property="og:title" content="Mansi Kamble - Portfolio">
+    <meta property="og:description" content="Mansi Kamble - Portfolio,portfolio website crafted using HTML, CSS, and JavaScript, showcases an impressive user interface with additional features to enhance the browsing experience">
+    <meta property="twitter:url" content="https://github.com/mansiiikamble/portfolio.git">
+    <meta property="twitter:title" content="Mansi Kamble - Portfolio">
+    <meta property="twitter:description" content="Mansi Kamble - Portfolio,portfolio website crafted using HTML, CSS, and JavaScript, showcases an impressive user interface with additional features to enhance the browsing experience">
+
+    <meta name="google-site-verification" content="bM2yj_s2PT7SPAKRSZNnTdMTgDV9Cz057fyv3CBExJc" />
+
+
+</head>
+<body>
+    <!-- <div class="mobile">
+        <div class="content">
+            <div class="image">
+                <img src="./assets/img/development/mob-dev.gif" alt="mobile development" class="mob-dev-img">
+            </div>
+            <div class="desc">
+                <div class="desc-container">
+                    <div style="color: #00eeff;">O</div>
+                    <div>O</div>
+                    <div style="color: #00eeff;">P</div>
+                    <div>S</div>
+                    <div style="color: #00eeff;">!</div>
+                </div>
+                <p>Looks like this website is under development</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="main">
+
+    <!-- header section -->
+
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li class="mobile-menu-cross" onclick=HideSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li onclick=hide()><a href="#home">Home</a></li>
+                <li onclick=hide()><a href="#about">About</a></li>
+                <li onclick=hide()><a href="#skills">Skills</a></li>
+                <li onclick=hide()><a href="#portfolio">Portfolio</a></li>
+                <li onclick=hide()><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#home" style="--i:1" class="active">Home</a></li>
+                <li class="hideOnMobile"><a href="#about" style="--i:2">About</a></li>
+                <li class="hideOnMobile"><a href="#skills" style="--i:3">Skills</a></li>
+                <li class="hideOnMobile"><a href="#portfolio" style="--i:4">Projects</a></li>
+                <li class="hideOnMobile"><a href="#contact" style="--i:5">Contact</a></li>
+                <li class="mobile-menu-icon" class="hideOnDesktop" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00eeff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-body">
+            <!-- home section -->
+     <section class="home hidden" id="home">
+        <div class="container">
+            <div class="home-content">
+                <h1>MANSI KAMBLE</h1>
+                <h3>I am a <span class="text"></span></h3>
+                <p>I am a front-end developer dedicated to crafting visually appealing, responsive websites. I transform ideas into reality with clean designs that function flawlessly across devices. Let's collaborate to create exceptional digital experiences together!</p>
+                <div class="social">
+                    <a href="https://www.instagram.com/mansiiikamble/" style="--i:8" target="_blank" alt="instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=918425055416 " style="--i:9" target="_blank" alt="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                <div class="home-btns">
+                    <button class="btn">
+                        <a href="mansi-kamble-resume.pdf" download="mansi-kamble-resume" target="_blank">Download CV</a>
+                    </button>
+                    <button class="btn">
+                        <a href="https://github.com/mansiiikamble" target="_blank">Github</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="home-img-container">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <img src="images/profile.jpg" alt="profile-pic" title="profile-pic" class="profile-pic" loading="lazy" width="440px" height="440px">
+                </div>
+            </div>
+
+        </div>
+ </section>
+
+<!-- about section -->
+ <section class="about hidden" id="about">
+    <h2 class="about-heading">About <span style="color: #00eeff;">Me</span></h2>
+
+
+     <div class="about-container">
+
+        <div class="about-main-content">
+            <div class="about-image">
+                <img src="images/DeeKay.gif" alt="about-img"  title="about-img" class="about-img" width="450px" height="450px"  loading="lazy">
+            </div>
+            <div class="about-content">
+
+                <h3 class="about-role">Front End Developer</h3>
+                <p class="about-para active" style="--a:1">
+                    As a passionate Front-End Developer, I excel in core technologies like <span style="color: #00eeff;">HTML</span>, <span style="color: #00eeff;">CSS</span>, and <span style="color: #00eeff;">JavaScript</span>, with hands-on experience from personal projects. My love for coding pushes me to continually refine these skills, creating dynamic and visually engaging websites with exceptional user experiences.
+                </p>
+
+                <p class="about-para" style="--a:2">
+                    In addition to my core skills, I am proficient in <span style="color: #00eeff;">Bootstrap</span> and <span style="color: #00eeff;">React.js</span>, enabling me to build responsive, interactive web apps. My expertise with <span style="color: #00eeff;">Git</span> and <span style="color: #00eeff;">GitHub</span> ensures smooth version control and collaboration.
+                </p>
+
+                <p class="about-para" style="--a:3">
+                    Currently, I'm working towards becoming a full-stack developer to build comprehensive web solutions. My passion for development drives me to turn creative visions into reality while contributing to the evolving digital landscape.
+                </p>
+            </div>
+        </div>
+
+    </div>
+ </section>
+
+ <!-- projects section -->
+<section class="services hidden">
+    <h2 class="service-heading">My <span style="color: #00eeff;">Services</span></h2>
+
+    <div class="service-container">
+        <div class="service active" style="--s:1">
+            <div class="service-img">
+                <img src="images/website.webp" alt="website gif" title="website gif" class="service-img" loading="lazy" width="300px" height="150px">
+            </div>
+            <div class="service-desc">
+                <i class='bx bx-code-alt' style='color:#00eeff'  ></i>
+                <h3>Website Design and Development</h3>
+                <p>Transforming ideas into stunning, responsive websites that deliver seamless user experiences and drive business growth</p>
+
+            </div>
+        </div>
+
+        
+    </div>
+ </section>
+
+ <!-- skills -->
+<section class="skills hidden" id="skills">
+    <h2 class="skills-heading">My <span style="color: #00eeff;">Skills</span></h2>
+
+    <div class="main-skills-container">
+        <div class="container-1">
+            <h3 class="heading">Technical Skills</h3>
+            <div class="technical-bars">
+                <div class="bar">
+                    <i class='bx bxl-html5' style='color:#e34f26'  ></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-css3' style='color:#2965f1' ></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-javascript' style='color:#f7df1e' ></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line js">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-bootstrap' style='color:#563d7c' ></i>
+                    <div class="info">
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="progress-line bootstrap">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class='bx bxl-react' style='color:#61dbfb' ></i>
+                    <div class="info">
+                        <span>React</span>
+                    </div>
+                    <div class="progress-line react">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-1  hidden show">
+            <h3 class="heading">Professional Skills</h3>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewbox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+                        </svg>
+                        <div class="percentage">95%</div>
+                        <div class="text">Leadership</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewbox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80" ></circle>
+                        </svg>
+                        <div class="percentage">95%</div>
+                        <div class="text">Team Work</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewbox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80" ></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewbox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80" ></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewbox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+                            <circle class="path path-5" cx="100" cy="100" r="80" ></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewbox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+                            <circle class="path path-6" cx="100" cy="100" r="80" ></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Project Management</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- projects -->
+ <section class="projects hidden" id="portfolio">
+    <div class="projects-container">
+        <h2 class="projects-heading">My <span style="color: #00eeff;">Projects</span></h2>
+        <div class="projects-main-container">
+            <div class="projects-cards">
+                <div class="project-card">
+                    <div class="card-main">
+                        <img src="images/project1.png" alt="NGO-Website" title="NGO-Website" loading="lazy">
+                        <div class="card-up">
+                            <h3>NGO Website</h3>
+                            <p>A responsive NGO website built with HTML,CSS and JavaScript</p>
+                            <a href="https://mansiiikamble.github.io/goodwill-ngo/" target="_blank"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+
+                    </div>
+                    <!-- <div class="card-bottom"></div> -->
+            </div>
+        </div>
+    </div>
+    </div>
+ </section>
+
+ <!-- contact -->
+  <section class="contact hidden" id="contact">
+    <div class="contact-container">
+        <h2 class="contact-heading">Contact <span style="color: #0ef;">Me</span></h2>
+        <div class="contact-main-container">
+            <div class="contact-left">
+                <div class="contact-desc">
+                    <h3 class="contact-sub-heading">Let's work together</h3>
+                    <p class="contact-sub-desc">Ready to bring your ideas to life with stunning, responsive websites? As a front-end developer, I specialize in turning visions into beautiful, functional web experiences. Let's collaborate and build something amazing together—get in touch today!</p>
+                </div>
+                <div class="contact-list">
+                    <div class="phone">
+                        <i class='bx bxs-phone-call' style='color:#00eeff'  ></i>
+                        <a href="tel:+918425055416">+91 8425055416</a>
+                    </div>
+                    <div class="email">
+                        <i class='bx bxl-gmail' style='color:#00eeff' ></i>
+                        <a href="mailto:mansikamble543@gmail.com">mansikamble543@gmail.com</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/mansiiikamble/" style="--i:8" target="_blank" alt="instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=918425055416" style="--i:9" target="_blank" alt="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social">
+                    <a href="https://www.instagram.com/mansiiikamble/" style="--i:8" target="_blank" alt="instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=918425055416" style="--i:9" target="_blank" alt="whatsapp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                <div class="footer-text">
+                    <p>©Copyright. All rights reserved</p>
+                    <p>Developed by Mansi Kamble</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+
+
+     <script src="js/script.js"></script>
+     <script defer src="js/app.js"></script>
+</body>
+</html>
